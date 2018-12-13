@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" manifest="https://cdn.jsdelivr.net/gh/dchousing/er/cache.manifest">
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/hashmap@2.3.0/hashmap.min.js"
+        integrity="sha384-Vb/lwmUY5cfdX8shg/iPND4wK8PiHl8xr4aEFFqQ0mWG2wiZd1D8RoU4KX0Hy+WV"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/alasql@0.4" integrity="sha384-yVprygj8qcTnrvKbKFSyshwGle+5wWYFd2slHbYhKDEdILDBPInIaLyL1v/sE0dy"
+        crossorigin="anonymous"></script>
+</head>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        //**security functions
+        //var er = encodeURIComponent(document.referrer);
+        //console.log(document.referrer);
+        //window.location.replace(u);
+        //https://cdn.jsdelivr.net/gh/dchousing/er/er.htm
+        //https://github.com/dchousing/er/blob/master/er.htm
+        //https://gitcdn.link/repo/dchousing/er/master/er.htm
+
+        $("#Body").serializeArray().map(function (v) { return [v.name, v.value]; });
+        $("#From").serializeArray().map(function (v) { return [v.name, v.value]; });
+
+        //HttpContext.Current.Request.Form("Body")
+        //HttpContext.Current.Request.Form("From"),
+
+        //<?xml version="1.0" encoding="UTF-8" ?>
+        //var xmlString = '<Response><Message><Body>test</Body></Message></Response>';        
+        //.open();
+        //document.contentType = "text/xml";
+        //document.charset = "UTF-8";
+        //.write(xmlString);
+        //document.write(jQuery.parseXML(xmlString).toString());
+        //document.close();
+
+
+
+    });
+    //function getFormValues(f) { return $("#" + f).serialize(); }
+
+    //function getStates() { var a = []; return $.ajax({ async: 0, type: "GET", url: "https://gitcdn.link/cdn/omokayade/json/4aa9313ee8782f19949ef2140afc419077897fde/states.json", cache: 1, crossDomain: 1, dataType: "json", success: function (c) { for (var n = 0; n < c.length; n++) a.push(c[n]) } }), a }  
+
+</script>
+</html>
