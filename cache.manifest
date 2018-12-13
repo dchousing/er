@@ -2,6 +2,7 @@ CACHE MANIFEST
 # 03-10-2018 v0.44534444442345
 
 CACHE:
+https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.min.js
 https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
 https://cdn.jsdelivr.net/npm/hashmap@2.3.0/hashmap.min.js
 https://unpkg.com/compromise@latest/builds/compromise.min.js
